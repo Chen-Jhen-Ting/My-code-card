@@ -1,19 +1,19 @@
 # Code-Card
 ## 作者
-### [Chen-Jhen-Ting](https://github.com/Chen-Jhen-Ting)
-### [gn2481](https://github.com/gn2481)
+### [Chen-Jhen-Ting](https://github.com/Chen-Jhen-Ting) [gn2481](https://github.com/gn2481)
 ## version 1.0
 ## 製作緣由
 身為一個新手工程師，常常會忘記一些指令或是程式的方法
 ex. 
 - git rebase
 - js  sort
-![](https://i.imgur.com/cQSfphU.png)
+![](https://i.imgur.com/aNw7iNf.png)
 
-![](https://i.imgur.com/DfeGgCG.png)
+![](https://i.imgur.com/m8IZ51R.png)
 
 ## 簡述
 - 使用[codeMirror](https://github.com/codemirror/codemirror)製作程式碼編輯器
+- 目前支援js、ruby、css、HTML、SQL的語法高亮
 
 ## 使用方法 
 - 將專案 clone 到用戶端
@@ -31,13 +31,14 @@ ex.
 - 在 popup 區選擇要語言的類別，在描述區打入註記
 - 選擇語言後 code 會套用該語言的 Highlight
 - 點選新增 code 就可以存下份筆記
- ![](https://i.imgur.com/sUayFmx.jpg)
+ ![]((https://i.imgur.com/aNw7iNf.png)
 - 從 popup 區可以到 review 頁面
 - 可在上方點選語言與輸入描述來尋找想要的筆記
-![](https://i.imgur.com/ZIn1LnD.png)
+![](https://i.imgur.com/m8IZ51R.png)
 
 
 ## 未來目標
+- 選取文字按下右鍵後，自動跳出程式碼編輯頁面
 - 使用者可以自訂主題
 - 使用者未選擇語言或未輸入程式碼時，無法進行儲存
 - 可以使用subline、vim其他編輯器的編輯方式編輯程式碼
