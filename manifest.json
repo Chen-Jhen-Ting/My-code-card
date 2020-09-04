@@ -7,7 +7,7 @@
 
   "content_scripts": [{
     "matches": ["https://*/*", "https://*/*"],
-    "js": ["contentScript.js"]
+    "js": ["eventPage.js"]
   }],
   "manifest_version": 2,
   "icons": {

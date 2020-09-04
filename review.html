@@ -26,22 +26,23 @@
     <h1>code note</h1>
   </header>
   <section class='container intro'>
-    <p>目前有 <strong id='codes-count'></strong> 筆 code 筆記:</p>
-    <label for="type">code 類別</label>
-    <select class="form-control" name="type">
-      <option selected value>---請選擇語言類型---</option>
-      <option value="ruby">Ruby</option>
-      <option value="ruby">Rails</option>
-      <option value="javascript">JavaScript</option>
-      <option value="sql">SQL</option>
-      <option value="powershell">Git</option>
-      <option value="css">CSS</option>
-      <option value="xml">HTML</option>
-    </select>
-    <label bel for="desc">功能描述</label>
-    <input type="text" name="desc">
-    <button id="searchBtn">開始搜尋</button>
-    <button id='clear' class='button button-clear'>清空 note </button>
+    <div class="row">目前有 <strong id='codes-count'></strong> 筆 code 筆記:
+      <button id='clear' class='button button-clear'>清空 note </button>
+    </div>
+    <div>搜尋選項</div>
+    <div class="wrap">
+      <select class="form-control select-review" name="type">
+        <option selected value>請選擇語言類型</option>
+        <option value="ruby">Ruby</option>
+        <option value="ruby">Rails</option>
+        <option value="javascript">JavaScript</option>
+        <option value="sql">SQL</option>
+        <option value="powershell">Git</option>
+        <option value="css">CSS</option>
+        <option value="xml">HTML</option>
+      </select>
+      <input class="desc-review" type="text" name="desc" placeholder="功能描述">
+      <button id="searchBtn" class="button button-primary search-btn">開始搜尋</button></div>
   </section>
   <section id='notes' class='container'></section>
 </body>

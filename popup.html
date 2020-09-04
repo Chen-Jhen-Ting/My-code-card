@@ -24,7 +24,7 @@
     <br>
     <hr>
     <label>類型:</label>
-    <select class="form-control" name="type">
+    <select class="form-control select-popup" name="type">
       <option selected value>---請選擇語言類型---</option>
       <option value="ruby">Ruby</option>
       <option value="ruby">Rails</option>
@@ -36,16 +36,16 @@
     </select>
     <br>
     <label>描述:</label>
-    <input type='text' name='desc' placeholder='請選取/輸入描述'>
+    <input class="desc-popup" type='text' name='desc' placeholder='請選取/輸入描述'>
     <br>
     <div class="wrap">
 
       <!-- <textarea class="code" id="codeArea"></textarea> -->
     </div>
     <br>
-    <input class="button button-primary" type='submit' value='新增code'>
+    <button class="button button-primary" type='submit'>新增code</button>
   </form>
   <hr>
-  <button id='review' class='button button-primary'>前往筆記頁面</button>
+  <button id='review' class='button button-grey'>前往筆記頁面</button>
 </body>
 </html>
