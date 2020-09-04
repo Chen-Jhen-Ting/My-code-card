@@ -1,0 +1,28 @@
+{
+  "name": "code card",
+  "version": "1.0",
+  "description": "儲存你忘記的單字卡",
+  "options_page": "review.html",
+  "permissions": ["activeTab","storage","contextMenus"],
+
+  "content_scripts": [{
+    "matches": ["https://*/*", "https://*/*"],
+    "js": ["contentScript.js"]
+  }],
+  "manifest_version": 2,
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "scripts":["eventPage.js"],
+    "persistent": false
+  },
+
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com; object-src 'self'"
+}

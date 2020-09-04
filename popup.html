@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel=stylesheet type="text/css" href="style.css">
+  <script src="./codemirror-5.57.0/lib/codemirror.js"></script>
+  <link rel="stylesheet" href="./codemirror-5.57.0/lib/codemirror.css">
+  <script src='./popup.js'></script>
+  <!-- 編輯器語言模式 -->
+  <script src="./codemirror-5.57.0/mode/ruby/ruby.js"></script>
+  <script src="./codemirror-5.57.0/mode/javascript/javascript.js"></script>
+  <script src="./codemirror-5.57.0/mode/sql/sql.js"></script>
+  <script src="./codemirror-5.57.0/mode/powershell/powershell.js"></script>
+  <script src="./codemirror-5.57.0/mode/css/css.js"></script>
+  <script src="./codemirror-5.57.0/mode/xml/xml.js"></script>
+  <!-- 編輯器主題 -->
+  <link rel="stylesheet" href="./codemirror-5.57.0/theme/rubyblue.css">
+
+  <style>
+    #codeArea{
+      font-size: 12px;
+      word-wrap: break-word;
+    }
+    body{
+      width: 1000px!important;
+    }
+  </style>
+</head>
+<body class='popup-body'>
+  <p>目前有 <strong id='code-notes-count'>0</strong> 筆 code 筆記:</p>
+  <!-- <p id='code-type'></p> -->
+  <form class="codeForm">
+    <br>
+    <hr>
+    <label>類型:</label>
+    <select class="form-control" name="type">
+      <option selected value>---請選擇語言類型---</option>
+      <option value="ruby">Ruby</option>
+      <option value="ruby">Rails</option>
+      <option value="javascript">JavaScript</option>
+      <option value="sql">SQL</option>
+      <option value="powershell">command</option>
+      <option value="css">CSS</option>
+      <option value="xml">HTML</option>
+    </select>
+    <br>
+    <label>描述:</label>
+    <input type='text' name='desc' placeholder='請選取/輸入描述'>
+    <br>
+    <label>Code:</label>
+    <div class="wrap">
+
+      <!-- <textarea class="code" id="codeArea"></textarea> -->
+    </div>
+    <br>
+    <input class="button button-primary" type='submit' value='新增code'>
+  </form>
+  <hr>
+  <button id='review' class='button button-primary'>前往筆記頁面</button>
+</body>
+</html>
