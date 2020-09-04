@@ -1,6 +1,7 @@
 # Code-Card
 ## 作者
-### [Chen-Jhen-Ting](https://github.com/Chen-Jhen-Ting) [gn2481](https://github.com/gn2481)
+#### [Chen-Jhen-Ting](https://github.com/Chen-Jhen-Ting)
+#### [gn2481](https://github.com/gn2481)
 ## version 1.0
 ## 製作緣由
 身為一個新手工程師，常常會忘記一些指令或是程式的方法
