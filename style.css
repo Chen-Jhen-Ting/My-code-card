@@ -32,7 +32,7 @@ header {
 }
 
 section {
-  display: flex;
+  /* display: flex; */
   padding: 0 .5rem;
   align-items: center;
 }
@@ -54,6 +54,7 @@ section {
   cursor: pointer;
   transition: all .1s;
   background-color: inherit;
+  margin-bottom: 5px;
 }
 
 .button.button-primary {
@@ -72,23 +73,26 @@ section {
   box-shadow: var(--botton-outline);
 }
 
-.button.button-sort {
-  border: 2px solid var(--color-primary);
-  color: var(--color-primary);
+.button.button-grey {
+  background-color: var(--color-grey);
+  border: 2px solid var(--color-grey);
+  color: #fff;
+  width:100%;
 }
 
-.button.button-sort:hover {
-  background-color: var(--color-primary);
-  color: #fff;
+.button.button-grey:hover {
+  background-color: var(--color-black);
+  border: 2px solid var(--color-black);
 }
 
-.button.button-sort:active {
-  background-color: var(--color-primary-dark);
-  color: #fff;
-  box-shadow: var(--botton-outline---color-primary);
+.button.button-grey:active {
+  box-shadow: var(--botton-outline);
 }
 
 .button.button-clear {
+  position: absolute;
+  right: 0;
+  top: 0;
   border: 2px solid var(--color-red);
   color: var(--color-red);
 }
@@ -119,6 +123,10 @@ section {
 }
 
 /* reivew page*/
+.search-btn{
+  width: 100px !important;
+  margin-left: 0!important;
+}
 
 .intro button {
   margin-left: auto;
@@ -199,4 +207,33 @@ strong {
   height: auto!important;
   min-height: 200px;
   border-radius: 5px!important;
+}
+select{
+height: 30px;
+font-size: xx-small;
+width: 100%;
+}
+
+.select-review{
+  width: 20%;
+  height: 34px;
+}
+
+[name=desc]{
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+}
+.desc-review{
+  width: 50%;
+  height: 30px;
+}
+
+.row{
+  position: relative;
+}
+
+.wrap{
+  display: flex;
+  justify-content: space-between;
 }
