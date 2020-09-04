@@ -152,7 +152,7 @@ strong {
 
 .card {
   width: 40%;
-  /* height: 200px; */
+  /* height: 300px; */
   color: var(--color-black);
   border-radius: 10px;
   box-shadow: var(--shadow);
@@ -204,8 +204,8 @@ strong {
   font-size: 12px;
 }
 .CodeMirror{
-  height: auto!important;
-  min-height: 200px;
+  height: 200px!important;
+  overflow: auto;
   border-radius: 5px!important;
 }
 select{

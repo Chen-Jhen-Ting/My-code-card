@@ -8,6 +8,18 @@ window.addEventListener('DOMContentLoaded', () => {
     [';', ";\n"],
     ['  ', "\n"]
   ]
+  function wrapOutPut (selectedCode){
+    res = regexes.reduce((selectedCode, regex) => selectedCode.replace(new RegExp(regex[0], 'g'), regex[1]), selectedCode)
+    line = res.split("\n").length
+    if(10-line > 0){
+      for(let i = 0; i< (10-line); i++){
+        res = res +"\n"
+      }
+      return res
+    }else{
+      return res
+    }
+  }
   // 先將storage裡的變數叫出來，把使用者選到的字塞到codeArea!
   chrome.storage.local.get(['arguments'] || {}, result => {
     let selectedCode = `${result.arguments.selected}`
@@ -18,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
       lineNumbers: true,
       theme: 'rubyblue',
       lineWrapping: true,
-      value: regexes.reduce((selectedCode, regex) => selectedCode.replace(new RegExp(regex[0], 'g'), regex[1]), selectedCode)
+      value: wrapOutPut(selectedCode)
       // value: `${result.arguments.selected}`.replace(/ }/g,"\n}").replace(/  /g,"\n").replace(/;/g,";\n")
     }
     myCodeMirror = CodeMirror(wrap, editorConfig);
