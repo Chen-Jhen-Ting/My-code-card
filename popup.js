@@ -75,6 +75,11 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       })
     })
+    chrome.storage.local.set({
+      arguments: {
+        selected: ""
+      }
+    });
   })
 
   document.getElementById('review').addEventListener('click', () => {
