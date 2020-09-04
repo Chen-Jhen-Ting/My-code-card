@@ -12,17 +12,6 @@ ex.
 
 ![](https://i.imgur.com/DfeGgCG.png)
 
-
-## 製作緣由
-身為一個新手工程師，我常常會忘記一些指令或是程式的方法
-ex. 
-- git rebase
-- js  sort
-......
-我決定做一個 chrome extension 來記錄我需要的指令與 code
-
-
-
 ## 使用方法 
 - 將專案 clone 到用戶端
 - 點開 chrome 右上角的套件管理區，打開管理擴充功能
