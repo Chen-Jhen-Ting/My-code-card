@@ -3,8 +3,14 @@ window.addEventListener('DOMContentLoaded', () => {
   let modeType = document.querySelector('select')
   let desc = document.querySelector('[name=desc]')
   var myCodeMirror
+  const regexes = [
+    [' }', "\n}"],
+    [';', ";\n"],
+    ['  ', "\n"]
+  ]
   // 先將storage裡的變數叫出來，把使用者選到的字塞到codeArea!
   chrome.storage.local.get(['arguments'] || {}, result => {
+    let selectedCode = `${result.arguments.selected}`
     // 當type選單選好才給 mode
     let editorConfig = {
       mode: "meta",
@@ -12,10 +18,20 @@ window.addEventListener('DOMContentLoaded', () => {
       lineNumbers: true,
       theme: 'rubyblue',
       lineWrapping: true,
-      value: `${result.arguments.selected}`.replace(/ }/g,"\n}").replace(/  /g,"\n")
+      value: regexes.reduce((selectedCode, regex) => selectedCode.replace(new RegExp(regex[0], 'g'), regex[1]), selectedCode)
+      // value: `${result.arguments.selected}`.replace(/ }/g,"\n}").replace(/  /g,"\n").replace(/;/g,";\n")
     }
     myCodeMirror = CodeMirror(wrap, editorConfig);
+    setTimeout(function() {
+      myCodeMirror.refresh()
+    },1);
   })
+  // const regexes = [
+  //   [' }', "\n}"],
+  //   [';', ";\n"],
+  //   ['  ', "\n"]
+  // ]
+  // let rs = regexes.reduce((s, regex) => s.replace(new RegExp(regex[0], 'g'), regex[1]), s)
 
   modeType.addEventListener('change', (e) => {
     myCodeMirror.setOption('mode', modeType.value)
