@@ -1,11 +1,13 @@
 # Code-Card
+## 作者
+### [Chen-Jhen-Ting](https://github.com/Chen-Jhen-Ting)
+### [gn2481](https://github.com/gn2481)
 ## version 1.0
 ## 製作緣由
 身為一個新手工程師，我常常會忘記一些指令或是程式的方法
 ex. 
 - git rebase
 - js  sort
-## version 1.0
 ![](https://i.imgur.com/cQSfphU.png)
 
 ![](https://i.imgur.com/DfeGgCG.png)
@@ -19,9 +21,6 @@ ex.
 ......
 我決定做一個 chrome extension 來記錄我需要的指令與 code
 
-## 作者
-### [Chen-Jhen-Ting](https://github.com/Chen-Jhen-Ting)
-### [gn2481](https://github.com/gn2481)
 
 
 ## 使用方法 
@@ -58,10 +57,6 @@ ex.
 
 ......
 我決定做一個 chrome extension 來記錄我需要的指令與 code
-
-## 作者
-### [Chen-Jhen-Ting](https://github.com/Chen-Jhen-Ting)
-### [gn2481](https://github.com/gn2481)
 
 
 ## 使用方法 
