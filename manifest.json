@@ -1,7 +1,7 @@
 {
   "name": "code card",
   "version": "1.0",
-  "description": "儲存你忘記的單字卡",
+  "description": "儲存你忘記的 code",
   "options_page": "note.html",
   "permissions": ["activeTab","storage","contextMenus"],
 
