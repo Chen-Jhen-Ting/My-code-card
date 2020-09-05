@@ -2,7 +2,7 @@
   "name": "code card",
   "version": "1.0",
   "description": "儲存你忘記的單字卡",
-  "options_page": "review.html",
+  "options_page": "note.html",
   "permissions": ["activeTab","storage","contextMenus"],
 
   "content_scripts": [{

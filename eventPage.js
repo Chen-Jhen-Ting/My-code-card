@@ -1,6 +1,6 @@
 let contextMenuItem = {
   "id": "selectCode",
-  "title": "複製到Code Card",
+  "title": "複製到Code Note",
   "contexts": ["selection"]
 };
 chrome.contextMenus.create(contextMenuItem);
