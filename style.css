@@ -208,6 +208,7 @@ strong {
   height: 200px!important;
   overflow: auto;
   border-radius: 5px!important;
+  width: 100%;
 }
 select{
 height: 30px;
