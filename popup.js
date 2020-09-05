@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })
 
-  document.getElementById('review').addEventListener('click', () => {
-    window.open(chrome.runtime.getURL('review.html'))
+  document.getElementById('note').addEventListener('click', () => {
+    window.open(chrome.runtime.getURL('note.html'))
   })
 });
