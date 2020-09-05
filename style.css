@@ -165,6 +165,7 @@ strong {
   border: 2px solid #cccccc;
   margin-bottom: 2px;
   border-radius: 5px;
+  padding:0px 5px;
 }
 
 .desc{
